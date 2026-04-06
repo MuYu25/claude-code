@@ -9,6 +9,7 @@ coverage
 *.suo
 *.lock
 src/utils/vendor/
+build-executables
 
 # AI tool runtime directories
 .agents/
