@@ -66,7 +66,12 @@
     "docs:dev": "npx mintlify dev",
     "typecheck": "tsc --noEmit",
     "precheck": "bun run typecheck && bun run check:fix && bun test",
-    "rcs": "bun run scripts/rcs.ts"
+    "rcs": "bun run scripts/rcs.ts",
+    "test:all": "bun run typecheck && bun test",
+    "build:executable": "bun run scripts/build-executable.ts",
+    "build:executable:bun": "bun run scripts/build-executable.ts --bun",
+    "build:executable:pkg": "bun run scripts/build-executable.ts --pkg",
+    "build:executable:nexe": "bun run scripts/build-executable.ts --nexe"
   },
   "dependencies": {
     "@agentclientprotocol/sdk": "^0.19.0",
