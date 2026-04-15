@@ -15,15 +15,15 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: ubuntu-latest
-            target: linux-x64
-            binary-ext: ''
-          - os: macos-latest
-            target: macos-x64
-            binary-ext: ''
-          - os: macos-latest
-            target: macos-arm64
-            binary-ext: ''
+        #   - os: ubuntu-latest
+        #     target: linux-x64
+        #     binary-ext: ''
+        #   - os: macos-latest
+        #     target: macos-x64
+        #     binary-ext: ''
+        #   - os: macos-latest
+        #     target: macos-arm64
+        #     binary-ext: ''
           - os: windows-latest
             target: windows-x64
             binary-ext: '.exe'
@@ -66,4 +66,4 @@ jobs:
           draft: false
           prerelease: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
